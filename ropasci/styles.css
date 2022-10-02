@@ -1,0 +1,89 @@
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  body {
+    background: radial-gradient(#083358, #010038);
+  }
+  
+  h1 {
+    margin: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 0 #232931;
+    font-size: 5rem;
+    color: #F5FDB0;
+    margin-bottom: 60px;
+  }
+  
+  h2{
+     margin: 10px;
+     color: #F7E6AD;
+    }
+    h3{
+      color: #EEEEEE;
+    }
+
+.text{
+  width: 50%;
+  float: left;
+}
+  p {
+    font-size: 2rem;
+    color: #66ffe0;
+    font-family: 'Indie Flower', cursive;
+  }
+  
+ img{
+  width: 250px;
+    margin: 5% auto auto auto;
+
+ }
+
+
+.btn{
+    margin-top: 5%;
+   background-color: #393E46;
+   color: #F7E6AD;
+   font-weight : bold ;
+   border: 2px solid black;
+  }
+
+  .btns{
+    margin-top: 400px;
+  }
+
+  .playbtn{
+    color: #F7E6AD;
+    font-weight : bold ;
+
+  }
+  @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    
+  }
+  h2{
+    font-size: 1rem;
+  }
+  h3{
+    font-size: 1rem;
+  }
+ img{
+  width: 100px;
+ }
+ .compgame{
+  margin-left: 60px;
+ }
+ .usergame{
+  margin-top: 10px;
+  margin-left: 60px;
+ }
+ .btn{
+  width: 60px;
+  font-size: 10px;
+ }
+}
+

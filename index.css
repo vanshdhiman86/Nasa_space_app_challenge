@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+  }
+  .item {
+    background: #C7F2A4;
+    flex-basis: 200px;
+    height: 200px;
+    margin: 5px;
+    text-align: center;
+    
+  }
+
+  body{
+    font-size: x-large;
+    background-color: #06283D;
+  }
+
+  .heading{
+    text-align: center;
+    color: #F8EDE3;
+    margin: 10px;
+    font-size: 50px;
+  }
+  

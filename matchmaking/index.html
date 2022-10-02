@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="styles.css" rel="stylesheet">
+		<script src="script.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+		<title>fact-o-space</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	
+	<body>
+        <div style="position: relative; display: inline-block;">
+		<canvas style="height: 0px;"><script src="index.js" type="text/javascript"></script></canvas>
+		<div style="position: absolute; left: 30rem;">
+			<h1 class="page-title">Matchmaking</h1>
+			<div class="overlay-text visible">
+				Click to Start
+			  </div>
+			  <div id="game-over-text" class="overlay-text">
+				GAME OVER
+				<p id="p1" style = "font-size:30px">a</p>
+				<span class="overlay-text-small">Click to Restart</span>
+			  </div>
+			  <div id="victory-text" class="overlay-text">
+				VICTORY
+				<p id="p2" style = "font-size:30px">a</p>
+				<span class="overlay-text-small">Click to Restart</span>
+			  </div>
+			
+			  <div class="game-container">
+				<div class="game-info-container">
+				  <div class="game-info">
+					Time <span id="time-remaining">100</span>
+				  </div>
+				  <div class="game-info">
+					Flips <span id="flips">0</span>
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+			
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/1.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/1.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/2.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/2.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/3.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/3.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/4.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+				   
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/4.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/5.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/5.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/6.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/6.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+				   
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+				   
+					<img class="card-value" src="Assets/Images/7.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+				   
+					<img class="card-value" src="Assets/Images/7.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+					
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+					
+					<img class="card-value" src="Assets/Images/8.jpg">
+				  </div>
+				</div>
+				<div class="card">
+				  <div class="card-back card-face">
+				   
+					<img class="spider" src="Assets/Images/Stars.png">
+				  </div>
+				  <div class="card-front card-face">
+				   
+					<img class="card-value" src="Assets/Images/8.jpg">
+				  </div>
+				</div>
+			  </div>
+		</div>
+		</div>
+		<script src="fact.js" type="text/javascript"></script>
+
+	</body>
+</html>
